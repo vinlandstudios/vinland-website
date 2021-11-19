@@ -74,11 +74,9 @@ export default function SocialLinks() {
       <div className="text-center">
         <div>
           <h6 className={classes.heading}>
-            Follow <span className={classes.highlight}>PolkaBridge</span>
+            Follow <span className={classes.highlight}>VinLand</span>
           </h6>
-          <p className={classes.para}>
-            To Get latest updates on PolkaBridge join!
-          </p>
+          <p className={classes.para}>To Get latest updates on Vinland join!</p>
           <div className="d-flex justify-content-center mt-4">
             <div className={classes.iconWrapper}>
               <Tooltip title="Twitter" aria-label="add1">
@@ -117,40 +115,10 @@ export default function SocialLinks() {
                 </a>
               </Tooltip>
             </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Reddit">
-                <a href="https://www.reddit.com/r/polkabridge_official/">
-                  <IconButton aria-label="Reddit">
-                    <Reddit className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Instagram">
-                <a href="https://www.instagram.com/polkabridgeofficial/">
-                  <IconButton aria-label="Reddit">
-                    <Instagram className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Discord">
-                <a href="https://discord.gg/G3NDrcq6GW">
-                  <IconButton aria-label="Discord">
-                    <img
-                      src="images/discord.png"
-                      className={classes.icon}
-                      alt="discord"
-                    />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
+
             <div className={classes.iconWrapper}>
               <Tooltip title="Email">
-                <a href="mailto:support@polkabridge.org">
+                <a href="mailto:support@vinland.io">
                   <IconButton aria-label="Email">
                     <Email className={classes.icon} />
                   </IconButton>

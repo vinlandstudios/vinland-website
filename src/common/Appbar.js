@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
       display: "block",
     },
     paddingRight: 10,
-    fontWeight: 400,
+    fontWeight: 500,
     lineHeight: "24px",
     verticalAlign: "baseline",
     letterSpacing: "-1px",
@@ -133,12 +133,9 @@ export default function PrimarySearchAppBar() {
     >
       <List>
         {[
-          { name: "Solution", id: "about" },
           { name: "How It Works", id: "how-it-works" },
-          { name: "PBR Token", id: "pbt-token" },
           { name: "Team", id: "team" },
           { name: "Roadmap", id: "roadmap" },
-          { name: "Exchange", id: "exchange" },
         ].map((tab, index) => (
           <Link
             activeClass="active"
@@ -161,10 +158,8 @@ export default function PrimarySearchAppBar() {
       <Divider />
       <List>
         {[
-          { name: "Farming", id: "https://farm.polkabridge.org/" },
-          { name: "Swap", id: "https://swap.polkabridge.org/" },
           {
-            name: "Apply For IDO",
+            name: "get Airdrop",
             id: "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0",
           },
         ].map((tab, index) => (
@@ -190,25 +185,13 @@ export default function PrimarySearchAppBar() {
     <div className={classes.grow}>
       <AppBar
         position="fixed"
-        style={{ background: "white", boxShadow: "none" }}
+        style={{ background: "#000000", boxShadow: "none" }}
       >
         <Toolbar className="d-flex justify-content-evenly">
           <Typography className={classes.title} variant="h6" noWrap>
             <img src="logo.png" alt="logo" height="60px" />
           </Typography>
           <div className="d-flex justify-content-end">
-            <Link
-              activeClass="active"
-              to="about"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
-              <Typography className={classes.tabs} variant="body1" noWrap>
-                Solution <DotCircle />
-              </Typography>
-            </Link>
             <Link
               activeClass="active"
               to="how-it-works"
@@ -233,18 +216,7 @@ export default function PrimarySearchAppBar() {
                 Team <DotCircle />
               </Typography>
             </Link>
-            <Link
-              activeClass="active"
-              to="pbt-token"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
-              <Typography className={classes.tabs} variant="body1">
-                PBR Token <DotCircle />
-              </Typography>
-            </Link>
+
             <Link
               activeClass="active"
               to="roadmap"
@@ -257,18 +229,7 @@ export default function PrimarySearchAppBar() {
                 Roadmap <DotCircle />
               </Typography>
             </Link>
-            <Link
-              activeClass="active"
-              to="exchange"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
-              <Typography className={classes.tabs} variant="body1">
-                Exchange <DotCircle />
-              </Typography>
-            </Link>
+
             <a href="docs/whitepaper.pdf" style={{ textDecoration: "none" }}>
               <Typography className={classes.tabs} variant="body1">
                 Read Whitepaper <DotCircle />
@@ -277,7 +238,7 @@ export default function PrimarySearchAppBar() {
 
             <div className={classes.sectionDesktop}>
               <CustomButton
-                title={"Apply For IDO"}
+                title={"Get Airdrop"}
                 link={
                   "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0"
                 }

@@ -1,23 +1,17 @@
-# PolkaBridge - Cross-Chain Dex
+# Vinland - A MultiChain Defi Metaverse
 
-With PolkaBridge, you can swap tokens on DOT platform to tokens on other chains and vice versa. Users will be able to earn by adding liquidity, lending, farming and more other ways simply
+Vinland is MultiChain Defi Metaverse where you can interact with many protocols in a gamified arena.
 
-![Website Screenshot](polkabridge.png)
-![Roadmap](Roadmap.png)
-![Footer Screenshot](Footer.png)
+![Website Screenshot](vinland.png)
 
 Following sections are developed:
 
 1. Product Demo
-2. Tokenomics & Locking
-3. Roadmap
-4. Use cases
-5. Product MVP
-6. Investors
-7. Features
-8. Working
-9. Partners
-10. Social Links
+2. Roadmap
+3. Use cases
+4. Product MVP
+5. Team
+6. Social Links
 
 ## Available Scripts
 

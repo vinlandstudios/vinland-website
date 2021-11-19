@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 10,
     paddingBottom: 10,
     textAlign: "left",
+
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -42,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     borderRadius: "50px",
-    background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
+    background: `linear-gradient(to bottom,#AC1708, #991206)`,
     lineHeight: "24px",
     verticalAlign: "baseline",
     letterSpacing: "-0.8px",
@@ -70,7 +71,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageContainer: {
-    width: "100%",
+    width: "80%",
+    borderRadius: 20,
     [theme.breakpoints.down("sm")]: {
       marginTop: 30,
       height: "100%",
@@ -97,49 +99,48 @@ export default function About() {
       <div className="row g-0 mt-3">
         <div className="col-md-6">
           <h6 className={classes.heading}>
-            What is <strong className={classes.highlight}>POLKABRIDGE?</strong>
+            What is <strong className={classes.highlight}>VINLAND?</strong>
           </h6>
           <p className={classes.para}>
-            A Multichain & Cross-Chain Decentralized All-In-One PLatform To
-            Include AMM, Farming, Lending,Launchpad, Prediction, NFT, and More.
+            Vinland is MultiChain Defi Metaverse where you can interact with
+            many protocols in a gamified arena.
           </p>
 
           <Fade left>
             <div className="d-flex justify-content-center mt-3">
               <div className={classes.focusContainer}>
                 <h6 className={classes.title}>
-                  <span style={{ fontSize: 18 }}>
-                    {" "}
-                    Multichain & Cross-Chain universe
-                  </span>
+                  <span style={{ fontSize: 18 }}> Multichain Universe</span>
                 </h6>
                 <p className={classes.para}>
                   Supported Ethereum, BSC, PolkaDot, Harmony, Polygon, Solana.
                 </p>
               </div>
               <div className={classes.focusContainer}>
-                <h6 className={classes.title}>Deflationary mechanism</h6>
+                <h6 className={classes.title}>Protocol Interaction</h6>
                 <p className={classes.para}>
-                  0.4% amount for farmer rewards and 0.1% will be burned.
+                  Gamified way of interacting with portocols such as Uniswap,
+                  Sushiswap etc.
                 </p>
               </div>
             </div>
             <div className="d-flex justify-content-center">
               <div className={classes.focusContainer}>
-                <h6 className={classes.title}>High performance</h6>
-                <p className={classes.para}>UI is simple and fast.</p>
+                <h6 className={classes.title}>NFTs Marketplace</h6>
+                <p className={classes.para}>
+                  Authentic and premium brand NFTs marketplace.
+                </p>
               </div>
               <div className={classes.focusContainer}>
-                <h6 className={classes.title}>Fully Audited</h6>
-                <p className={classes.para}>Audited by Certik.</p>
-                <a href="https://certik.org/projects/polkabridge">
-                  Check report
-                </a>
+                <h6 className={classes.title}>Decentalised Metaverse</h6>
+                <p className={classes.para}>
+                  Anyone can bring their NFTs and use into the metaverse
+                </p>
               </div>
             </div>
             <div className="text-left mt-3">
               <Button
-                href="https://www.youtube.com/watch?v=tsbRzb2S7mU"
+                href="https://www.youtube.com/watch?v=xYnK5nbwkkM&ab_channel=AsharShahid"
                 target="_blank"
                 variant="contained"
                 color="primary"
@@ -152,7 +153,7 @@ export default function About() {
         </div>
         <div className="col-md-6">
           <Fade right>
-            <div>
+            <div className="text-center">
               <img
                 src="images/about.png"
                 alt="explain"

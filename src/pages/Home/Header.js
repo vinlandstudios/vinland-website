@@ -1,7 +1,12 @@
 import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import { CallToAction, MonetizationOn, ShutterSpeed } from "@material-ui/icons";
+import {
+  CallToAction,
+  MonetizationOn,
+  ShutterSpeed,
+  YouTube,
+} from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
 
 const useStyles = makeStyles((theme) => ({
@@ -25,10 +30,10 @@ const useStyles = makeStyles((theme) => ({
     height: "80vh",
     width: "auto",
     background: `linear-gradient(0deg,
-      rgba(255, 255, 255, 0.99),
-      rgba(233, 233, 233, 0.19)
+      rgba(0, 0, 2, 0.6),
+      rgba(0, 0, 233, 0.1)
     ),
-    url("https://png.pngtree.com/thumb_back/fh260/background/20201014/pngtree-abstract-particles-background-with-connection-concept-vector-illustration-image_416083.jpg") no-repeat center center
+    url("images/cover.png") no-repeat center center
       fixed`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -68,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     borderRadius: "50px",
-    background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
+    background: `linear-gradient(to bottom,#AC1708, #991206)`,
     lineHeight: "24px",
     verticalAlign: "baseline",
     letterSpacing: "-0.8px",
@@ -104,24 +109,24 @@ export default function Header() {
             </div>
             <Pulse>
               <h1 className={classes.heading}>
-                Decentralized all-in-one financial
+                A MultiChain Defi
                 <br />
-                application platform
+                <span style={{ fontSize: 100 }}>Metaverse</span>
               </h1>
             </Pulse>
             <p className={classes.subheading}>
               <strong>Powered by </strong>{" "}
               <div className={classes.title} variant="h6" noWrap>
                 <img
-                  src="https://polkadot.network/assets/img/logo-polkadot.svg?v=c1f8875403"
+                  src="https://www.freelogovectors.net/wp-content/uploads/2021/10/polygon_token_logo-freelogovectors.net_.png"
                   alt="logo"
-                  height="40px"
+                  height="60px"
                 />
               </div>
             </p>
             <div className="text-center mt-3">
               <a
-                href="https://swap.polkabridge.org/"
+                href="https://youtu.be/xYnK5nbwkkM"
                 style={{ textDecoration: "none", padding: 5 }}
               >
                 <Button
@@ -129,7 +134,7 @@ export default function Header() {
                   color="primary"
                   className={classes.button}
                 >
-                  <ShutterSpeed className={classes.icon} /> Launch APP
+                  <YouTube className={classes.icon} /> Watch Demo
                 </Button>
               </a>
             </div>

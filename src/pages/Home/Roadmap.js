@@ -130,31 +130,27 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function Roadmap(props) {
   const classes = useStyles();
-  const [x, setX] = useState(window.innerWidth > 400 ? -300 : -500);
+  const [x, setX] = useState(0);
 
   const goRight = () => {
-    x === -100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 5)
-      ? setX(0)
-      : setX(x - 100);
+    x === -100 * ([1, 2, 3, 4, 5, 6].length - 5) ? setX(0) : setX(x - 100);
   };
   const goLeft = () => {
-    x === 100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 5) ? setX(x + 100) : setX(0);
+    x === 100 * ([1, 2, 3, 4, 5, 6].length - 5) ? setX(x + 100) : setX(0);
   };
 
   const goRightMob = () => {
-    x === -100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 1)
-      ? setX(0)
-      : setX(x - 100);
+    x === -100 * ([1, 2, 3, 4, 5, 6].length - 1) ? setX(0) : setX(x - 100);
   };
   const goLeftMob = () => {
-    x === 100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 1) ? setX(x + 100) : setX(0);
+    x === 100 * ([1, 2, 3, 4, 5, 6].length - 1) ? setX(x + 100) : setX(0);
   };
 
   return (
     <div className={classes.background}>
       <div>
         <h6 className={classes.heading}>
-          PolkaBridge <strong className={classes.highlight}>RoadMap</strong>
+          Vinland <strong className={classes.highlight}>RoadMap</strong>
         </h6>
         <p className={classes.para}>
           Fundamentally strong and visionary project with strong foundation.
@@ -181,7 +177,7 @@ export default function Roadmap(props) {
                   <div className={classes.quarterWrapper}>
                     <div>
                       <Description className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q3, 2020</h4>
+                      <h4 className={classes.quarterText}>Q3, 2021</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
@@ -192,14 +188,14 @@ export default function Roadmap(props) {
 
                       <ul className={classes.list}>
                         <li>Research on Defi & Crosschain solution</li>
-                        <li>Research on Polkadot ecosystem</li>
+                        <li>Research on building platforms</li>
                       </ul>
                     </div>
                   </div>,
                   <div className={classes.quarterWrapper}>
                     <div>
                       <GroupWork className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q4, 2020</h4>
+                      <h4 className={classes.quarterText}>Q4, 2021</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
@@ -210,106 +206,13 @@ export default function Roadmap(props) {
 
                       <ul className={classes.list}>
                         <li>Team forming & project brainstorming</li>
-                        <li>Design tokenomics for PolkaBridge token (PBR)</li>
+                        <li>Design tokenomics for Vinland token</li>
                       </ul>
                     </div>
                   </div>,
                   <div className={classes.quarterWrapper}>
                     <div>
                       <LocalFlorist className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q1, 2021</h4>
-                    </div>
-                    <div className={classes.lineMaker}>
-                      <div className={classes.circle}></div>{" "}
-                      <div className={classes.baseline}></div>
-                    </div>
-                    <div className={classes.details}>
-                      <h6 className={classes.title}>Listing & Farming</h6>
-
-                      <ul className={classes.list}>
-                        <li>Develop smart contract and web</li>
-                        <li>Whitepaper</li>
-                        <li>PBR Token IDO</li>
-                        <li>Listing PBR on Uniswap</li>
-                        <li>Listing PolkaBridge on PolkaProject</li>
-                        <li>Deflationary Farming</li>
-                        <li>Listing on tier-2 CEXs</li>
-                      </ul>
-                    </div>
-                  </div>,
-                  <div className={classes.quarterWrapper}>
-                    <div>
-                      <Timer className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q2, 2021</h4>
-                    </div>
-                    <div className={classes.lineMaker}>
-                      <div className={classes.circle}></div>{" "}
-                      <div className={classes.baseline}></div>
-                    </div>
-                    <div className={classes.details}>
-                      <h6 className={classes.title}>Staking & Launchpad</h6>
-
-                      <ul className={classes.list}>
-                        <li>Multichain Launchpad </li>
-                        <li>Multichain Staking</li>
-                      </ul>
-                    </div>
-                  </div>,
-                  <div className={classes.quarterWrapper}>
-                    <div>
-                      <SwapHoriz className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q3, 2021</h4>
-                    </div>
-                    <div className={classes.lineMaker}>
-                      <div className={classes.circle}></div>{" "}
-                      <div className={classes.baseline}></div>
-                    </div>
-                    <div className={classes.details}>
-                      <h6 className={classes.title}>AMM</h6>
-
-                      <ul className={classes.list}>
-                        <li>
-                          Multichain AMM (Ethereum, Binance Smart Chain,
-                          Polygon){" "}
-                        </li>
-
-                        <li>Expand to Polygon Ecosystem</li>
-                      </ul>
-                    </div>
-                  </div>,
-                  <div className={classes.quarterWrapper}>
-                    <div>
-                      <CloudQueue className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q4, 2021</h4>
-                    </div>
-                    <div className={classes.lineMaker}>
-                      <div className={classes.circle}></div>{" "}
-                      <div className={classes.baseline}></div>
-                    </div>
-                    <div className={classes.details}>
-                      <h6 className={classes.title}>PolkaDot Integration</h6>
-
-                      <ul className={classes.list}>
-                        <li>
-                          Listing on tier-1 CEX (Kucoin, Huobi, Okex, FTX)
-                        </li>
-                        <li>Mainnet Multichain AMM</li>
-                        <li>
-                          Integrate Harmony Blockchain into PolkaBridge DEFI
-                          application(AMM, Staking, LaunchPad)
-                        </li>
-                        <li>Develop testnet on MoonBeam</li>
-                        <li>Run PBR to MoonBeam parachain</li>
-                        <li>
-                          Integrate PolkaDot into PolkaBridge DEFI application
-                          (AMM, Staking, LaunchPad)
-                        </li>
-                      </ul>
-                    </div>
-                  </div>,
-                  <div className={classes.quarterWrapper}>
-                    <div>
-                      <SettingsEthernet className={classes.icon} />
                       <h4 className={classes.quarterText}>Q1, 2022</h4>
                     </div>
                     <div className={classes.lineMaker}>
@@ -317,10 +220,33 @@ export default function Roadmap(props) {
                       <div className={classes.baseline}></div>
                     </div>
                     <div className={classes.details}>
-                      <h6 className={classes.title}>Crosschain AMM</h6>
+                      <h6 className={classes.title}>IDO & Testnet</h6>
 
                       <ul className={classes.list}>
-                        <li>Launching Crosschain AMM</li>
+                        <li>Develop smart contract and web</li>
+                        <li>Whitepaper</li>
+                        <li>Vinland Token IDO</li>
+                        <li>Listing PBR on Uniswap</li>
+                        <li>Launching Staking</li>
+                        <li>Testnet launch</li>
+                      </ul>
+                    </div>
+                  </div>,
+                  <div className={classes.quarterWrapper}>
+                    <div>
+                      <Timer className={classes.icon} />
+                      <h4 className={classes.quarterText}>Q2, 2022</h4>
+                    </div>
+                    <div className={classes.lineMaker}>
+                      <div className={classes.circle}></div>{" "}
+                      <div className={classes.baseline}></div>
+                    </div>
+                    <div className={classes.details}>
+                      <h6 className={classes.title}>Mainnet Launch</h6>
+
+                      <ul className={classes.list}>
+                        <li>Tier 1 & 2 Listings</li>
+                        <li>Product Mainnet launch</li>
                       </ul>
                     </div>
                   </div>,

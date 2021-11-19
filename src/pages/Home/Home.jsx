@@ -52,40 +52,37 @@ export default function Home() {
       <section id="header">
         <Header />
       </section>
-      <section id="partnerships">
+      {/* <section id="partnerships">
         <Partnerships />
-      </section>
-      <section id="ecosystem">
-        <Ecosystem />
-      </section>
+      </section> */}
       <hr style={{ color: "#e9e9e9" }} />
       <section id="about">
         <About />
       </section>
-      <section id="features">
+      {/* <section id="features">
         <Features />
-      </section>
-      <section id="how-it-works">
+      </section> */}
+      {/* <section id="how-it-works">
         <HowItWorks />
-      </section>
-      <section id="pbt-token">
+      </section> */}
+      {/* <section id="pbt-token">
         <PBRToken />
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <Tokenomics />
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <ReleaseSchedule />
-      </section>
+      </section> */}
       <section id="roadmap">
         <Roadmap />
       </section>
       <section id="team">
         <Team />
       </section>
-      <section id="exchange">
+      {/* <section id="exchange">
         <Listings />
-      </section>
+      </section> */}
       <section>
         <SocialLinks />
       </section>
