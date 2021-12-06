@@ -65,9 +65,9 @@ export default function Home() {
       {/* <section id="how-it-works">
         <HowItWorks />
       </section> */}
-      {/* <section id="pbt-token">
+      <section id="pbt-token">
         <PBRToken />
-      </section> */}
+      </section>
       {/* <section>
         <Tokenomics />
       </section> */}

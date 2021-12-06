@@ -115,7 +115,7 @@ export default function Team() {
         </h4>
 
         <div className="container">
-          <div className="row justify-content-end">
+          <div className="row justify-content-center">
             <div className="col-6 col-md-2">
               <Fade left>
                 <div className={classes.people}>
@@ -144,7 +144,7 @@ export default function Team() {
                 </div>
               </Fade>{" "}
             </div>
-            <div className="col-6  col-md-2">
+            <div className="col-6 col-md-2">
               <Fade right>
                 <div className={classes.people}>
                   <img

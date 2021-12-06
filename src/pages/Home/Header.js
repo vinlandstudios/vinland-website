@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     height: "80vh",
     width: "auto",
     background: `linear-gradient(0deg,
-      rgba(0, 0, 2, 0.6),
-      rgba(0, 0, 233, 0.1)
+      rgba(255, 255, 220, 0.6),
+      rgba(255, 255, 233, 0.1)
     ),
     url("images/cover.png") no-repeat center center
       fixed`,
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 15,
   },
   heading: {
-    color: theme.palette.pbr.textSecondary,
+    color: "black",
     width: "auto",
     textAlign: "center",
     fontSize: "52px",
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 20,
     fontSize: 16,
     fontWeight: 400,
-    fontColor: theme.palette.pbr.textLight,
+    color: "black",
     marginTop: 25,
   },
   button: {

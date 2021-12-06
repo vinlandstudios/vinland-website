@@ -185,7 +185,7 @@ export default function PrimarySearchAppBar() {
     <div className={classes.grow}>
       <AppBar
         position="fixed"
-        style={{ background: "#000000", boxShadow: "none" }}
+        style={{ background: "rgba(0, 0, 0, 0.1)", boxShadow: "none" }}
       >
         <Toolbar className="d-flex justify-content-evenly">
           <Typography className={classes.title} variant="h6" noWrap>
