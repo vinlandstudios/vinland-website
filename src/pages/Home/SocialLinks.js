@@ -80,7 +80,7 @@ export default function SocialLinks() {
           <div className="d-flex justify-content-center mt-4">
             <div className={classes.iconWrapper}>
               <Tooltip title="Twitter" aria-label="add1">
-                <a href="https://twitter.com/realpolkabridge">
+                <a href="https://twitter.com/project-vinland">
                   <IconButton aria-label="Twitter">
                     <Twitter className={classes.icon} />
                   </IconButton>
@@ -89,7 +89,7 @@ export default function SocialLinks() {
             </div>
             <div className={classes.iconWrapper}>
               <Tooltip title="Telegram">
-                <a href="https://t.me/polkabridgegroup">
+                <a href="https://t.me/vinland">
                   <IconButton aria-label="Telegram">
                     <Telegram className={classes.icon} />
                   </IconButton>
@@ -99,18 +99,9 @@ export default function SocialLinks() {
 
             <div className={classes.iconWrapper}>
               <Tooltip title="Github">
-                <a href="https://github.com/cyclese96">
+                <a href="https://github.com/project-vinland">
                   <IconButton aria-label="Github">
                     <GitHub className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Medium">
-                <a href="https://polkabridge.medium.com/">
-                  <IconButton aria-label="Reddit">
-                    <img src="./images/medium.png" className={classes.icon} />
                   </IconButton>
                 </a>
               </Tooltip>

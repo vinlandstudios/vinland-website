@@ -33,10 +33,11 @@ const useStyles = makeStyles((theme) => ({
 
   highlight: {
     color: theme.palette.pbr.primary,
-    fontSize: 66,
+    fontSize: 50,
+    fontWeight: 700,
   },
   para: {
-    fontWeight: 500,
+    fontWeight: 400,
     verticalAlign: "baseline",
     letterSpacing: "-0.8px",
     margin: 0,
@@ -44,7 +45,9 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 10,
     paddingRight: 50,
     textAlign: "left",
-    fontSize: 20,
+    width: "80%",
+    fontSize: 18,
+    lineHeight: 1.8,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -70,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 15,
   },
   imageContainer: {
-    width: "95%",
+    height: "fit-content",
     borderRadius: 10,
 
     [theme.breakpoints.down("sm")]: {
@@ -79,8 +82,18 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   pointer: { paddingBottom: 10 },
+  ul: {
+    lineHeight: 2,
+    paddingLeft: 15,
+  },
+  li: {
+    textDecoration: "none",
+    outline: "none",
+
+    "list-style-type": "none",
+  },
 }));
-export default function PBRToken() {
+export default function ForProjects() {
   const classes = useStyles();
 
   return (
@@ -90,7 +103,7 @@ export default function PBRToken() {
           <Fade left>
             <div>
               <img
-                src="https://investorplace.com/wp-content/uploads/2021/11/metaverse.jpg"
+                src="images/metaverse.png"
                 alt="logo"
                 className={classes.imageContainer}
               />
@@ -99,15 +112,33 @@ export default function PBRToken() {
         </div>
         <div className="col-md-6 col-sm-12 col-sm-pull-4">
           <Fade right>
-            <h6 className={classes.heading}>
-              Help educate new{" "}
-              <strong className={classes.highlight}>cryptocitizens</strong>
-            </h6>
+            <h6 className={classes.heading}>Find your</h6>
+            <h3 className={classes.highlight}> CryptoCitizens</h3>
             <p className={classes.para}>
-              If you’re a community that’s looking to educate your members on
-              crypto applications, reach out to us on discord to discuss how we
-              can work together.
+              Use Vinland to attract new users and stakeholders for your
+              community. Vinland allows projects to distribute tokens to users
+              through proof-of-use. Gain customers, honest feedback and testing
+              by real users.
             </p>
+            <p className={classes.para}>
+              Gain customers, honest feedback and testing by real users. Gain
+              customers, honest feedback and testing by real users. Gain
+              customers, honest feedback and testing by real users.
+            </p>
+            <ul className={classes.ul}>
+              <li className={classes.li}>
+                ✅ <span style={{ paddingLeft: 10 }}>Easy Traction</span>
+              </li>
+              <li className={classes.li}>
+                ✅ <span style={{ paddingLeft: 10 }}>User Testing</span>{" "}
+              </li>
+              <li className={classes.li}>
+                ✅ <span style={{ paddingLeft: 10 }}>Honest Feedback</span>{" "}
+              </li>
+              <li className={classes.li}>
+                ✅ <span style={{ paddingLeft: 10 }}>Quick User growth</span>{" "}
+              </li>
+            </ul>
           </Fade>
         </div>
       </div>

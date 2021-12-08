@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   tabs: {
-    color: theme.palette.pbr.textSecondary,
+    color: "white",
     display: "none",
     [theme.breakpoints.up("md")]: {
       display: "block",
@@ -185,7 +185,7 @@ export default function PrimarySearchAppBar() {
     <div className={classes.grow}>
       <AppBar
         position="fixed"
-        style={{ background: "rgba(0, 0, 0, 0.1)", boxShadow: "none" }}
+        style={{ background: "rgba(0, 0, 0, 0.9)", boxShadow: "none" }}
       >
         <Toolbar className="d-flex justify-content-evenly">
           <Typography className={classes.title} variant="h6" noWrap>
@@ -213,7 +213,7 @@ export default function PrimarySearchAppBar() {
               delay={0}
             >
               <Typography className={classes.tabs} variant="body1">
-                Team <DotCircle />
+                Collaborate <DotCircle />
               </Typography>
             </Link>
 
@@ -229,16 +229,34 @@ export default function PrimarySearchAppBar() {
                 Roadmap <DotCircle />
               </Typography>
             </Link>
-
-            <a href="docs/whitepaper.pdf" style={{ textDecoration: "none" }}>
+            <Link
+              activeClass="active"
+              to="partners"
+              smooth={true}
+              offset={0}
+              duration={500}
+              delay={0}
+            >
               <Typography className={classes.tabs} variant="body1">
-                Read Whitepaper <DotCircle />
+                Partners <DotCircle />
               </Typography>
-            </a>
+            </Link>
+            <Link
+              activeClass="active"
+              to="social"
+              smooth={true}
+              offset={0}
+              duration={500}
+              delay={0}
+            >
+              <Typography className={classes.tabs} variant="body1">
+                Social Links <DotCircle />
+              </Typography>
+            </Link>
 
             <div className={classes.sectionDesktop}>
               <CustomButton
-                title={"Get Airdrop"}
+                title={"Read Whitepaper"}
                 link={
                   "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0"
                 }

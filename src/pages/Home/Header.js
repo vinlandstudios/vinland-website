@@ -30,10 +30,10 @@ const useStyles = makeStyles((theme) => ({
     height: "80vh",
     width: "auto",
     background: `linear-gradient(0deg,
-      rgba(255, 255, 220, 0.6),
-      rgba(255, 255, 233, 0.1)
+      rgba(0, 0, 0, 0.01),
+      rgba(0, 0, 3, 0.8)
     ),
-    url("images/cover.png") no-repeat center center
+    url("https://daoinsights.com/wp-content/uploads/2021/11/metaverseimage.png") no-repeat center center
       fixed`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 15,
   },
   heading: {
-    color: "black",
+    color: "white",
     width: "auto",
     textAlign: "center",
     fontSize: "52px",
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 20,
     fontSize: 16,
     fontWeight: 400,
-    color: "black",
+    color: "white",
     marginTop: 25,
   },
   button: {
@@ -103,10 +103,7 @@ export default function Header() {
         {" "}
         <div className={classes.header}>
           <div className={classes.spacing}>
-            <div className="d-flex flex-row justify-content-center mt-5">
-              {/* <div className={classes.circle} />
-              <p className={classes.notice}>PBR Launchpad starting soon.</p> */}
-            </div>
+            <div className="d-flex flex-row justify-content-center mt-5"></div>
             <Pulse>
               <h1 className={classes.heading}>
                 A MultiChain Defi

@@ -105,6 +105,10 @@ export default function About() {
             Vinland is MultiChain Defi Metaverse where you can interact with
             many protocols in a gamified arena.
           </p>
+          <p className={classes.para}>
+            Gain skills for participating in the new digital economy though
+            interactive gameplay.
+          </p>
 
           <Fade left>
             <div className="d-flex justify-content-center mt-3">

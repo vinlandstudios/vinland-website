@@ -6,6 +6,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    paddingBottom: 35,
+    paddingTop: 60,
+
     [theme.breakpoints.down("sm")]: {
       paddingBottom: 35,
     },
@@ -44,9 +47,9 @@ const useStyles = makeStyles((theme) => ({
   },
   imageWrapperNew: {
     padding: 10,
-    height: "70px",
+    height: "50px",
     [theme.breakpoints.down("sm")]: {
-      height: "64px",
+      height: "4px",
       padding: 10,
     },
   },
@@ -56,141 +59,41 @@ const useStyles = makeStyles((theme) => ({
   listingsWrappe2: {
     maxWidth: 900,
   },
+  heading: {
+    color: theme.palette.pbr.textSecondary,
+    textAlign: "center",
+    fontSize: 36,
+    fontWeight: 600,
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 28,
+    },
+  },
+  highlight: {
+    color: theme.palette.pbr.primary,
+  },
 }));
 export default function Partnerships() {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <p className={classes.para}>Our Proud Partners</p>
+      <h6 className={classes.heading}>
+        Our <span className={classes.highlight}> Proud Partners</span>
+      </h6>
+
       <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  text-center">
+        <div className="mt-1 row  text-center">
           <div className="col-6 col-md-2">
-            <a href="http://chinapolka.com/">
+            <a href="https://aave.com/">
               <img
-                src="images/chinapolka.png"
-                alt="logo"
+                src="images/aave.png"
+                alt="aave"
                 className={classes.imageWrapper}
               />
             </a>
           </div>
-          <div className="col-6 col-md-2">
-            <img
-              src="images/bmwcapital.png"
-              alt="logo"
-              className={classes.imageWrapperBMW}
-            />
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://projectinverse.com/">
-              <img
-                src="images/inverse.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://labsgroup.io/">
-              <img
-                src="images/labsgroup.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2 ">
-            <a href="https://unifarm.co/">
-              <img
-                src="images/unifarm.png"
-                alt="logo"
-                className={classes.imageWrapper}
-                style={{ borderRadius: 25 }}
-              />
-            </a>
-          </div>{" "}
-          <div className="col-6 col-md-2">
-            <a href="https://casperlabs.io/">
-              <img
-                src="images/casper.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  text-center">
-          <div className="col-6 col-md-2">
-            <a href="https://publicmint.com/">
-              <img
-                src="images/mint.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://oddiyana.ventures/">
-              <img
-                src="images/oddiyana.jpeg"
-                alt="logo"
-                className={classes.imageWrapperNew}
-                style={{ borderRadius: 20 }}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://taraxa.io/">
-              <img
-                src="images/taraxa.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://pinknode.io/">
-              <img
-                src="images/pinknode.jpeg"
-                alt="logo"
-                className={classes.imageWrapperNew}
-                style={{ borderRadius: 20 }}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://deeper.network/">
-              <img
-                src="images/deeper.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://unilend.finance/">
-              <img
-                src="images/unilend.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  text-center">
-          <div className="col-6 col-md-3">
-            <a href="https://dfyn.network/">
-              <img
-                src="images/dfyn.png"
-                alt="logo"
-                className={classes.imageWrapperNew}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-4">
+          <div className="col-6 col-md-5">
             <a href="https://polygon.technology/">
               <img
                 src="images/polygon.svg"
@@ -199,10 +102,10 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-12 col-md-3">
-            <a href="https://quickswap.exchange/">
+          <div className="col-6 col-md-4">
+            <a href="https://www.nftport.xyz/">
               <img
-                src="images/quickswap.png"
+                src="https://assets.website-files.com/60f51fac359e025bed0dd19b/6173ff84da7f630e1961bc98_new%20logo.png"
                 alt="logo"
                 className={classes.imageWrapperNew}
               />
