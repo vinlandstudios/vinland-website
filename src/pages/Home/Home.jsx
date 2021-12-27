@@ -23,25 +23,6 @@ const useStyles = makeStyles((theme) => ({}));
 export default function Home() {
   const classes = useStyles();
 
-  const [claimPopup, setClaimPopup] = useState(false);
-
-  useEffect(() => {
-    async function asyncFn() {
-      let popupDisplayTime = await readCache();
-
-      //Wait for Next 24 hours for popup to appear
-      let nextPopupTime = popupDisplayTime + 86400000;
-      let currentTime = parseInt(Date.now());
-
-      //If next popup is less than current time means enable popup
-      if (nextPopupTime <= currentTime) {
-        setClaimPopup(true);
-        addDataIntoCache();
-      }
-    }
-    asyncFn();
-  }, []);
-
   return (
     <div style={{ overflowX: "hidden" }}>
       <section id="header">
@@ -72,26 +53,6 @@ export default function Home() {
       <section>
         <Footer />
       </section>
-      <Dialog
-        className={classes.modal}
-        open={claimPopup}
-        TransitionComponent={Transition}
-        keepMounted={false}
-        onClose={() => setClaimPopup(false)}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-        PaperProps={{
-          style: {
-            backgroundColor: "transparent",
-            boxShadow: "none",
-          },
-        }}
-      >
-        <DexPopupContent closePopup={() => setClaimPopup(false)} />
-      </Dialog>{" "}
     </div>
   );
 }

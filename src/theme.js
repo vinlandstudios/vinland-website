@@ -14,7 +14,7 @@ export const theme = createMuiTheme({
       main: "#674293",
     },
     pbr: {
-      primary: "#AC1708",
+      primary: "#1141C4",
       secondary: "#C80C81",
       textPrimary: "#000000",
       textSecondary: "#000000",

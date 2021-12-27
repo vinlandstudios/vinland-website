@@ -35,14 +35,14 @@ const useStyles = makeStyles((theme) => ({
       display: "block",
     },
     paddingRight: 10,
-    fontWeight: 500,
+    fontWeight: 400,
     lineHeight: "24px",
     verticalAlign: "baseline",
     letterSpacing: "-1px",
     margin: 0,
     padding: "9px 14px 0px",
     cursor: "pointer",
-    fontSize: "1.2vw",
+    fontSize: "1vw",
   },
   inputRoot: {
     color: "inherit",
@@ -185,11 +185,11 @@ export default function PrimarySearchAppBar() {
     <div className={classes.grow}>
       <AppBar
         position="fixed"
-        style={{ background: "rgba(0, 0, 0, 0.9)", boxShadow: "none" }}
+        style={{ background: "rgba(0, 0, 0, 0.1)", boxShadow: "none" }}
       >
         <Toolbar className="d-flex justify-content-evenly">
           <Typography className={classes.title} variant="h6" noWrap>
-            <img src="logo.png" alt="logo" height="60px" />
+            <img src="vinlandWhite.png" alt="logo" height="60px" />
           </Typography>
           <div className="d-flex justify-content-end">
             <Link

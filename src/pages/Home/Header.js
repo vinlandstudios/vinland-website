@@ -12,28 +12,22 @@ import Pulse from "react-reveal/Pulse";
 const useStyles = makeStyles((theme) => ({
   spacing: {
     paddingTop: 130,
-
+    paddingLeft: "5%",
+    paddingRight: "5%",
     [theme.breakpoints.down("sm")]: {
       paddingTop: 50,
       textAlign: "center",
     },
   },
-  circle: {
-    width: 7,
-    height: 7,
-    padding: 5,
-    margin: 6,
-    borderRadius: "50%",
-    backgroundColor: theme.palette.pbr.primary,
-  },
+
   header: {
-    height: "80vh",
+    minHeight: "80vh",
     width: "auto",
-    background: `linear-gradient(0deg,
-      rgba(0, 0, 0, 0.01),
-      rgba(0, 0, 3, 0.8)
+    background: `linear-gradient(90deg,
+      rgba(0, 0, 0, 0.91),
+      rgba(0, 0, 3, 0.6)
     ),
-    url("https://daoinsights.com/wp-content/uploads/2021/11/metaverseimage.png") no-repeat center center
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/0150/production/_120763300_gettyimages-1284836641-1.jpg") no-repeat center center
       fixed`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -41,24 +35,16 @@ const useStyles = makeStyles((theme) => ({
       height: "85vh",
     },
   },
-  notice: {
-    fontWeight: 400,
-    verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
-    margin: 0,
-    paddingBottom: 15,
-  },
+
   heading: {
     color: "white",
-    width: "auto",
-    textAlign: "center",
-    fontSize: "52px",
-
+    width: "80%",
+    paddingTop: 100,
+    textAlign: "left",
+    fontSize: "54px",
     fontWeight: 600,
+    lineHeight: 1.3,
     verticalAlign: "middle",
-    wordSpacing: "0px",
-    margin: "0px 0px 12px",
-    padding: "0px 12px",
     [theme.breakpoints.down("sm")]: {
       fontSize: "32px",
     },
@@ -71,17 +57,45 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     marginTop: 25,
   },
+  highlight: {
+    color: "#1141C4",
+  },
+  para: {
+    width: "90%",
+    paddingTop: 15,
+    fontWeight: 300,
+    color: "white",
+    letterSpacing: 0.6,
+  },
   button: {
     borderRadius: "50px",
-    background: `linear-gradient(to bottom,#AC1708, #991206)`,
+    background: `linear-gradient(to right,#1141C4,#1141C4)`,
     lineHeight: "24px",
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
+    letterSpacing: -0.5,
     margin: 0,
     marginTop: 15,
     color: "#ffffff",
-    padding: "15px 30px 15px 30px",
-    fontWeight: 600,
+    padding: "10px 15px 10px 15px",
+    fontWeight: 400,
+    fontSize: 14,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 13,
+      padding: "10px 20px 10px 20px",
+    },
+  },
+  buttonWhite: {
+    borderRadius: "50px",
+    border: "1px solid #f9f9f9",
+    background: `transparent`,
+    lineHeight: "24px",
+    verticalAlign: "baseline",
+    letterSpacing: -0.5,
+    margin: 0,
+    marginTop: 15,
+    color: "#ffffff",
+    padding: "10px 15px 10px 15px",
+    fontWeight: 400,
     fontSize: 14,
     [theme.breakpoints.down("sm")]: {
       fontSize: 13,
@@ -100,40 +114,61 @@ export default function Header() {
   return (
     <Fragment>
       <section>
-        {" "}
         <div className={classes.header}>
           <div className={classes.spacing}>
-            <div className="d-flex flex-row justify-content-center mt-5"></div>
-            <Pulse>
-              <h1 className={classes.heading}>
-                A MultiChain Defi
-                <br />
-                <span style={{ fontSize: 100 }}>Metaverse</span>
-              </h1>
-            </Pulse>
-            <p className={classes.subheading}>
-              <strong>Powered by </strong>{" "}
-              <div className={classes.title} variant="h6" noWrap>
-                <img
-                  src="https://www.freelogovectors.net/wp-content/uploads/2021/10/polygon_token_logo-freelogovectors.net_.png"
-                  alt="logo"
-                  height="60px"
-                />
+            <div className="row w-100">
+              <div className="col-md-6 mt-3">
+                <Pulse>
+                  <h1 className={classes.heading}>
+                    Experience evolving
+                    <span className={classes.highlight}> Defi </span> in
+                    Metaverse.
+                  </h1>
+                  <p className={classes.para}>
+                    The metaverse is the next evolution of interaction, and we
+                    are powering the metaverse with Finance.
+                  </p>
+                  <div className="d-flex">
+                    <div className="mt-3">
+                      <a
+                        href="https://youtu.be/xYnK5nbwkkM"
+                        style={{ textDecoration: "none", padding: 5 }}
+                      >
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          className={classes.button}
+                        >
+                          Take A Tour
+                        </Button>
+                      </a>
+                    </div>
+                    <div className="mt-3">
+                      <a
+                        href="https://youtu.be/xYnK5nbwkkM"
+                        style={{ textDecoration: "none", padding: 5 }}
+                      >
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          className={classes.buttonWhite}
+                        >
+                          Join Discord
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </Pulse>
               </div>
-            </p>
-            <div className="text-center mt-3">
-              <a
-                href="https://youtu.be/xYnK5nbwkkM"
-                style={{ textDecoration: "none", padding: 5 }}
-              >
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className={classes.button}
-                >
-                  <YouTube className={classes.icon} /> Watch Demo
-                </Button>
-              </a>
+              <div className="col-md-6">
+                <div>
+                  <img
+                    src="https://thenemesis.io/img/metaverse/metaverse-village.png"
+                    alt="image"
+                    width="100%"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

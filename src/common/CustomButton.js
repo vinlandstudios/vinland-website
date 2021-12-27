@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   button: {
     borderRadius: "50px",
-    background: `linear-gradient(to bottom,#AC1708, #991206)`,
+    background: `linear-gradient(to bottom,#1141C4, #1141C4)`,
     lineHeight: "24px",
     verticalAlign: "baseline",
     letterSpacing: "-1px",
@@ -12,8 +12,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 5,
     color: "#ffffff",
     padding: "8px 16px 8px 16px",
-    fontWeight: 600,
+    fontWeight: 400,
     fontSize: "1.02vw",
+    textDecoration: "none",
+    textTransform: "none",
   },
 }));
 
