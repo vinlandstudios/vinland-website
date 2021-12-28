@@ -12,8 +12,8 @@ import Pulse from "react-reveal/Pulse";
 const useStyles = makeStyles((theme) => ({
   spacing: {
     paddingTop: 130,
-    paddingLeft: "5%",
-    paddingRight: "5%",
+    paddingLeft: "7%",
+    paddingRight: "7%",
     [theme.breakpoints.down("sm")]: {
       paddingTop: 50,
       textAlign: "center",

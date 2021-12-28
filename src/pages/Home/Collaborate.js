@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.pbr.textSecondary,
+    color: "#1141C4",
     textAlign: "left",
     fontSize: 22,
     fontWeight: 600,
@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     fontSize: 20,
     lineHeight: 2,
+    color: "white",
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -87,13 +88,24 @@ const useStyles = makeStyles((theme) => ({
     minHeight: 250,
     display: "flex",
     alignItems: "center",
-    background: "linear-gradient(to right,#9796f0, #fbc7d4)",
+    background: `linear-gradient(to right,#1141C4, #1141d9)`,
+    width: "auto",
+    background: `linear-gradient(90deg,
+      rgba(0, 0, 0, 0.91),
+      rgba(0, 0, 3, 0.8)
+    ),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/0150/production/_120763300_gettyimages-1284836641-1.jpg") no-repeat center center
+      fixed`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     borderRadius: 30,
     [theme.breakpoints.down("sm")]: {},
   },
   applyButton: {
-    backgroundColor: "white",
+    backgroundColor: "#1141C4",
     borderRadius: "50px",
+    color: "white",
+    textTransform: "none",
   },
 }));
 export default function Collaborate() {

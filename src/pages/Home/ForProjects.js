@@ -73,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 15,
   },
   imageContainer: {
+    width: "80%",
     height: "fit-content",
     borderRadius: 10,
 
@@ -103,7 +104,7 @@ export default function ForProjects() {
           <Fade left>
             <div>
               <img
-                src="images/metaverse.png"
+                src="https://metaverseland.app/images/banner.png"
                 alt="logo"
                 className={classes.imageContainer}
               />

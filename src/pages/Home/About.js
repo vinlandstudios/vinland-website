@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: "baseline",
     letterSpacing: "-0.8px",
     margin: 0,
-    paddingTop: 10,
+    paddingTop: 0,
     paddingBottom: 10,
     textAlign: "left",
 
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     borderRadius: "50px",
-    background: `linear-gradient(to bottom,#AC1708, #991206)`,
+    background: `linear-gradient(to bottom,#1141C4, #1141C4)`,
     lineHeight: "24px",
     verticalAlign: "baseline",
     letterSpacing: "-0.8px",
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageContainer: {
-    width: "80%",
+    width: "90%",
     borderRadius: 20,
     [theme.breakpoints.down("sm")]: {
       marginTop: 30,
@@ -159,7 +159,7 @@ export default function About() {
           <Fade right>
             <div className="text-center">
               <img
-                src="images/about.png"
+                src="https://miro.medium.com/max/832/0*ES_NtpZqcP7YHgOo.png"
                 alt="explain"
                 className={classes.imageContainer}
               />

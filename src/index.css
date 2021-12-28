@@ -13,6 +13,10 @@ body {
       rgba(255, 255, 233, 0.95)
     ),
     url("vinland_back.jpeg") no-repeat center center fixed;
+  /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.91), rgba(0, 0, 3, 0.6)),
+    url("https://ichef.bbci.co.uk/news/976/cpsprodpb/0150/production/_120763300_gettyimages-1284836641-1.jpg")
+      no-repeat center center fixed;
+  background-size: cover; */
 }
 
 code {

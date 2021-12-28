@@ -187,7 +187,10 @@ export default function PrimarySearchAppBar() {
         position="fixed"
         style={{ background: "rgba(0, 0, 0, 0.1)", boxShadow: "none" }}
       >
-        <Toolbar className="d-flex justify-content-evenly">
+        <Toolbar
+          className="d-flex justify-content-between"
+          style={{ paddingLeft: "7%", paddingRight: "7%" }}
+        >
           <Typography className={classes.title} variant="h6" noWrap>
             <img src="vinlandWhite.png" alt="logo" height="60px" />
           </Typography>
