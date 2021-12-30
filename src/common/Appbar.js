@@ -159,7 +159,7 @@ export default function PrimarySearchAppBar() {
       <List>
         {[
           {
-            name: "get Airdrop",
+            name: "Read Whitepaper",
             id: "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0",
           },
         ].map((tab, index) => (

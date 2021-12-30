@@ -33,7 +33,7 @@ export default function Footer() {
     <div className={classes.background}>
       <div className="container text-center">
         <div>
-          <img src="./logo.png" alt="logo" height="50px" />
+          <img src="./vinlandblue.png" alt="logo" height="50px" />
         </div>
         <p className={classes.para}>
           Copyright 2021 <span className={classes.highlight}>Vinland</span>. All
