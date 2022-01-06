@@ -13,6 +13,7 @@ import DexPopupContent from "../../components/DexPopup";
 import Team from "./Team";
 import Collaborate from "./Collaborate";
 import ForProjects from "./ForProjects";
+import MainAppbar from "../../common/Appbar";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -25,6 +26,7 @@ export default function Home() {
 
   return (
     <div style={{ overflowX: "hidden" }}>
+      <MainAppbar />
       <section id="header">
         <Header />
       </section>
