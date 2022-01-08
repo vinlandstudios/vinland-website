@@ -31,7 +31,7 @@ export default function Home() {
         <Header />
       </section>
       <hr style={{ color: "#e9e9e9" }} />
-      <section id="about">
+      <section id="how-it-works">
         <About />
       </section>
       <section id="for-projects">
@@ -46,10 +46,10 @@ export default function Home() {
       {/* <section id="team">
         <Team />
       </section> */}
-      <section id="partnerships">
+      <section id="partners">
         <Partnerships />
       </section>
-      <section>
+      <section id="social">
         <SocialLinks />
       </section>
       <section>

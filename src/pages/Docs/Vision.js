@@ -111,47 +111,44 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-export default function Overview() {
+export default function Vision() {
   const classes = useStyles();
 
   return (
     <div className={classes.background}>
       <div>
         <h4 className={classes.heading}>
-          <strong className={classes.highlight}>DeFi market overview</strong>
+          <strong className={classes.highlight}>Our Vinland</strong>
         </h4>
       </div>
       <div>
         <p className={classes.para}>
-          {" "}
-          Decentralized Finance has come a long way from the invention of the
-          money legos like Uniswap, MakerDAO and Compound in 2019. After this we
-          witnessed aggregation platforms like Yearn finance, 1inch finance and
-          0x Matcha - bringing more volumes and better prices to these legos.
-          Even with all these inventions and breakthroughs, the cumulative DeFi
-          userbase currently is around 10M - which is less than 0.1% of fintech
-          users. With DeFi reaching a product market fit across the broader
-          crypto and finance vertical, onboarding the next 50M users to onchain
-          products is a big problem to solve. Current defi UX experience falls
-          short as new users feel intimidated and stay away from using cutting
-          edge defi protocols. Clearly the next phase of products have to focus
-          on solving this. Primarily there is an absence of a social layer where
-          DeFi native users can interact with each other. In the web2 space,
-          there are lots of review and community websites around financial
-          review and discussion which have un-officially become the de-facto
-          social layer of traditional finance. Newcomers feel accepted by this
-          community and this eases the onboarding process. Another problem in
-          web3 is the fact that the majority of entrees have a disconnect
-          between the actual usecase of the dapp vs the price action. This stems
-          from the above-mentioned fact that DeFi today is incomprehensible by
-          the masses. To counter this, solutions like RabbitHole, Coinbase Earn
-          and other play-to-earn apps have come up, guiding people to try out
-          DeFi in sponsorship with the dapps. Over the past few months, the
-          industry has also seen an cambrian explosion of blockchain games, with
-          Axie infinity leading the way, now increased attention is been given
-          to games and metaverses like Decentral Games, Decentraland and
-          ComethGames, we feel games can be the gateway to the next wave of defi
-          and crypto onboarding.
+          We aim to create an onchain multichain metaverse game bridging the gap
+          between current metaverse games and DeFi. Building on our experiences
+          at previous jobs and vision of how the metaverse will evolve - we see
+          Vinland become the social layer to bridge DeFi and Metaverse/Games. A
+          3D space allows for a more immersive experience as we witnessed the
+          shift of content consumption from images -> videos -> VR. Similarly
+          for DeFi to reach global penetration as content delivery networks did
+          last decade, it has to be the silent engine that powers these in-game
+          economies. With current metaverse projects, there is this stark
+          disconnect between the actual financial economics that run in the real
+          world. If players had to finance their buildings and real estate in
+          these metaverses - there is no underlying mechanics to fund it. In the
+          real world, banks service this exact need and in the metaverse - AAVE
+          and Compound will.
+        </p>
+        <p className={classes.para}>
+          In Vinland, users can tour the DeFi metaverse which has multiple
+          storefronts for protocols like AAVE and PoolTogether. This gamified
+          visual experience allows users to better comprehend the importance of
+          DeFi dapps versus their IRL counterparts. We envision a very important
+          role of “quest developers” who design in-game quests in collaboration
+          with the community and partner protocols/DAOs. Once these first few
+          cohorts of users become “DeFi savvy” after quests and a good XP-score,
+          they will be able to unlock premium real estate and assets. This
+          on-chain data unravels a lot of insights that can be used by Vinland
+          DAO.
         </p>
       </div>
     </div>

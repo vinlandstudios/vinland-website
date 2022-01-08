@@ -26,50 +26,110 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: 10,
   },
+  active: {
+    color: "#1141C4",
+    backgroundColor: "white",
+    padding: "10px 5px 10px 5px",
+    textAlign: "left",
+    marginBottom: 0,
+    marginTop: 15,
+    fontSize: 16,
+    fontWeight: 500,
+    cursor: "pointer",
+    borderBottomRightRadius: 10,
+    borderTopRightRadius: 10,
+  },
+  inactive: {
+    color: "#f9f9f9",
+    backgroundColor: "transparent",
+    padding: "10px 5px 10px 5px",
+    textAlign: "left",
+    marginBottom: 0,
+    marginTop: 15,
+    fontSize: 16,
+    fontWeight: 500,
+    cursor: "pointer",
+  },
 }));
 
-const Leftbar = () => {
+const Leftbar = ({ tab, setTab }) => {
   const classes = useStyles();
   return (
     <div className="d-flex flex-column px-3 mt-5">
       <div className="mb-5">
         <img src="/vinlandWhite.png" className={classes.logo}></img>
       </div>
-      <div className={classes.tab}>
-        <Link to="/docs" style={{ color: "white" }}>
+      <div
+        className={tab === 0 ? classes.active : classes.inactive}
+        onClick={() => setTab(0)}
+      >
+        <span className={tab === 0 ? classes.active : classes.inactive}>
           <Assessment className={classes.icon} />
-          Introduction
-        </Link>
+          Overview
+        </span>
       </div>
-      <div className={classes.tab}>
-        <Link to="/docs/nft" style={{ color: "white" }}>
-          <SettingsApplications className={classes.icon} />
-          Game Overview
-        </Link>
+      <div
+        className={tab === 1 ? classes.active : classes.inactive}
+        onClick={() => setTab(1)}
+      >
+        <span className={tab === 1 ? classes.active : classes.inactive}>
+          <Assessment className={classes.icon} />
+          NFTs and Games
+        </span>
       </div>
-      <div className={classes.tab}>
-        <Link to="/docs/motivation" style={{ color: "white" }}>
-          <SettingsApplications className={classes.icon} />
-          Expansion
-        </Link>
+      <div
+        className={tab === 2 ? classes.active : classes.inactive}
+        onClick={() => setTab(2)}
+      >
+        <span className={tab === 2 ? classes.active : classes.inactive}>
+          <Assessment className={classes.icon} />
+          Our Motivation
+        </span>
       </div>
-      <div className={classes.tab}>
-        <Link to="/docs/token" style={{ color: "white" }}>
-          <SettingsApplications className={classes.icon} />
-          Our Team
-        </Link>
+      <div
+        className={tab === 3 ? classes.active : classes.inactive}
+        onClick={() => setTab(3)}
+      >
+        <span className={tab === 3 ? classes.active : classes.inactive}>
+          <Assessment className={classes.icon} />
+          Our Vision
+        </span>
       </div>
-      <div className={classes.tab}>
-        <Link to="/docs/roadmap" style={{ color: "white" }}>
-          <SettingsApplications className={classes.icon} />
-          Tokenomics
-        </Link>
+      <div
+        className={tab === 4 ? classes.active : classes.inactive}
+        onClick={() => setTab(4)}
+      >
+        <span className={tab === 4 ? classes.active : classes.inactive}>
+          <Assessment className={classes.icon} />
+          Defi and Metaverse
+        </span>
       </div>
-      <div className={classes.tab}>
-        <Link to="/docs/team" style={{ color: "white" }}>
-          <SettingsApplications className={classes.icon} />
+      <div
+        className={tab === 5 ? classes.active : classes.inactive}
+        onClick={() => setTab(5)}
+      >
+        <span className={tab === 5 ? classes.active : classes.inactive}>
+          <Assessment className={classes.icon} />
+          $VIN Token
+        </span>
+      </div>
+      <div
+        className={tab === 6 ? classes.active : classes.inactive}
+        onClick={() => setTab(6)}
+      >
+        <span>
+          <Assessment className={classes.icon} />
           Roadmap
-        </Link>
+        </span>
+      </div>
+      <div
+        className={tab === 7 ? classes.active : classes.inactive}
+        onClick={() => setTab(7)}
+      >
+        <span>
+          <Assessment className={classes.icon} />
+          Our Team
+        </span>
       </div>
     </div>
   );

@@ -86,9 +86,9 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonWhite: {
     borderRadius: "50px",
-    border: "1px solid #f9f9f9",
+    border: "2px solid #f9f9f9",
     background: `transparent`,
-    lineHeight: "24px",
+    lineHeight: "22px",
     verticalAlign: "baseline",
     letterSpacing: -0.5,
     margin: 0,

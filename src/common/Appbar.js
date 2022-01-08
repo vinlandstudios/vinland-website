@@ -160,17 +160,17 @@ export default function MainAppbar() {
         {[
           {
             name: "Read Whitepaper",
-            id: "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0",
+            id: "/doc",
           },
         ].map((tab, index) => (
-          <a href={tab.id} className={classes.mobileLink}>
+          <a href={tab.id} target="_blank" className={classes.mobileLink}>
             <ListItem button key={tab.name}>
               <ListItemText primary={tab.name} className={classes.menuTitle} />
             </ListItem>
           </a>
         ))}
         <ListItem button>
-          <a href="docs/whitepaper.pdf" style={{ textDecoration: "none" }}>
+          <a href="/docs" target="_blank" style={{ textDecoration: "none" }}>
             <ListItemText
               primary={"Read Whitepaper"}
               className={classes.menuTitlePink}
@@ -209,7 +209,7 @@ export default function MainAppbar() {
             </Link>
             <Link
               activeClass="active"
-              to="team"
+              to="for-projects"
               smooth={true}
               offset={0}
               duration={500}
@@ -260,9 +260,7 @@ export default function MainAppbar() {
             <div className={classes.sectionDesktop}>
               <CustomButton
                 title={"Read Whitepaper"}
-                link={
-                  "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0"
-                }
+                link={"/docs"}
               ></CustomButton>
             </div>
           </div>

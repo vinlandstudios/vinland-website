@@ -128,7 +128,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14,
   },
 }));
-export default function Roadmap(props) {
+export default function Roadmap({ color = "black" }) {
   const classes = useStyles();
   const [x, setX] = useState(0);
 
@@ -149,10 +149,10 @@ export default function Roadmap(props) {
   return (
     <div className={classes.background}>
       <div>
-        <h6 className={classes.heading}>
+        <h6 className={classes.heading} style={{ color: color }}>
           Vinland <strong className={classes.highlight}>RoadMap</strong>
         </h6>
-        <p className={classes.para}>
+        <p className={classes.para} style={{ color: color }}>
           Fundamentally strong and visionary project with strong foundation.
         </p>
       </div>
@@ -177,94 +177,127 @@ export default function Roadmap(props) {
                   <div className={classes.quarterWrapper}>
                     <div>
                       <Description className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q3, 2021</h4>
-                    </div>
-                    <div className={classes.lineMaker}>
-                      <div className={classes.circle}></div>{" "}
-                      <div className={classes.baseline}></div>
-                    </div>
-                    <div className={classes.details}>
-                      <h6 className={classes.title}>Research</h6>
-
-                      <ul className={classes.list}>
-                        <li>Research on Defi & Crosschain solution</li>
-                        <li>Research on building platforms</li>
-                      </ul>
-                    </div>
-                  </div>,
-                  <div className={classes.quarterWrapper}>
-                    <div>
-                      <GroupWork className={classes.icon} />
                       <h4 className={classes.quarterText}>Q4, 2021</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
                       <div className={classes.baseline}></div>
                     </div>
-                    <div className={classes.details}>
-                      <h6 className={classes.title}>Team & Tokenomics </h6>
+                    <div className={classes.details} style={{ color: color }}>
+                      <h6 className={classes.title}>Research</h6>
 
-                      <ul className={classes.list}>
-                        <li>Team forming & project brainstorming</li>
-                        <li>Design tokenomics for Vinland token</li>
+                      <ul className={classes.list} style={{ color: color }}>
+                        <li>Research on Metaverse & Defi solutions</li>
+                        <li>
+                          Research on building platforms and team formation
+                        </li>
                       </ul>
                     </div>
                   </div>,
                   <div className={classes.quarterWrapper}>
                     <div>
-                      <LocalFlorist className={classes.icon} />
+                      <GroupWork className={classes.icon} />
                       <h4 className={classes.quarterText}>Q1, 2022</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
                       <div className={classes.baseline}></div>
                     </div>
-                    <div className={classes.details}>
+                    <div className={classes.details} style={{ color: color }}>
+                      <h6 className={classes.title}>Beta Launch</h6>
+
+                      <ul className={classes.list} style={{ color: color }}>
+                        <li>Vinland closed beta launch - tester program .</li>
+                        <li>
+                          Integration and partnerships with blue chip defi
+                          protocols .
+                        </li>
+                        <li>
+                          Implementation of single player shooter mechanics
+                        </li>
+                      </ul>
+                    </div>
+                  </div>,
+                  <div className={classes.quarterWrapper}>
+                    <div>
+                      <LocalFlorist className={classes.icon} />
+                      <h4 className={classes.quarterText}>Q2, 2022</h4>
+                    </div>
+                    <div className={classes.lineMaker}>
+                      <div className={classes.circle}></div>{" "}
+                      <div className={classes.baseline}></div>
+                    </div>
+                    <div className={classes.details} style={{ color: color }}>
                       <h6 className={classes.title}>IDO & Testnet</h6>
 
-                      <ul className={classes.list}>
-                        <li>Develop smart contract and web</li>
-                        <li>Whitepaper</li>
-                        <li>Vinland Token IDO</li>
-                        <li>Listing PBR on Uniswap</li>
-                        <li>Launching Staking</li>
-                        <li>Testnet launch</li>
+                      <ul className={classes.list} style={{ color: color }}>
+                        <li>Open beta launch - access to power users</li>
+                        <li>
+                          Expanding protocols integration upto 15 across DeFi
+                          and games
+                        </li>
+                        <li>
+                          Onboarding users via Learn to earn model - in-game
+                          quests launch
+                        </li>
+                        <li>
+                          Laying smart contract foundations of a play to earn
+                          battle royale game mode
+                        </li>
+                        <li>
+                          Integration of video live streaming in the metaverse
+                          using Livepeer.
+                        </li>
                       </ul>
                     </div>
                   </div>,
                   <div className={classes.quarterWrapper}>
                     <div>
                       <Timer className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q2, 2022</h4>
+                      <h4 className={classes.quarterText}>Q3, 2022</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
                       <div className={classes.baseline}></div>
                     </div>
-                    <div className={classes.details}>
+                    <div className={classes.details} style={{ color: color }}>
                       <h6 className={classes.title}>Mainnet Launch</h6>
 
-                      <ul className={classes.list}>
-                        <li>Tier 1 & 2 Listings</li>
-                        <li>Product Mainnet launch</li>
+                      <ul className={classes.list} style={{ color: color }}>
+                        <li>(Tentative) token launch</li>
+                        <li>
+                          DAO formation to allow users and quest developers
+                          participate in quests design
+                        </li>
+                        <li>
+                          DAO formation to allow users and quest developers
+                          participate in quests design
+                        </li>
+                        <li>Metaverse vlogging and in-game DeFi education</li>
                       </ul>
                     </div>
                   </div>,
                   <div className={classes.quarterWrapper}>
                     <div>
                       <AccountBalance className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q2, 2022</h4>
+                      <h4 className={classes.quarterText}>Q4, 2022</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
                       <div className={classes.baseline}></div>
                     </div>
-                    <div className={classes.details}>
+                    <div className={classes.details} style={{ color: color }}>
                       <h6 className={classes.title}>New Features</h6>
 
-                      <ul className={classes.list}>
-                        <li>Lending </li>
-                        <li>Prediction </li>
+                      <ul className={classes.list} style={{ color: color }}>
+                        <li>Ethereum mainnet expansion. </li>
+                        <li>
+                          In-game advertisements for partner protocols via
+                          Livepeer.
+                        </li>
+                        <li>
+                          Implementation of third person battle royale game.
+                        </li>
                       </ul>
                     </div>
                   </div>,

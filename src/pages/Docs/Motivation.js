@@ -111,47 +111,44 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-export default function Overview() {
+export default function Motivation() {
   const classes = useStyles();
 
   return (
     <div className={classes.background}>
       <div>
         <h4 className={classes.heading}>
-          <strong className={classes.highlight}>DeFi market overview</strong>
+          <strong className={classes.highlight}>
+            Motivation behind Vinland:
+          </strong>
         </h4>
       </div>
       <div>
         <p className={classes.para}>
-          {" "}
-          Decentralized Finance has come a long way from the invention of the
-          money legos like Uniswap, MakerDAO and Compound in 2019. After this we
-          witnessed aggregation platforms like Yearn finance, 1inch finance and
-          0x Matcha - bringing more volumes and better prices to these legos.
-          Even with all these inventions and breakthroughs, the cumulative DeFi
-          userbase currently is around 10M - which is less than 0.1% of fintech
-          users. With DeFi reaching a product market fit across the broader
-          crypto and finance vertical, onboarding the next 50M users to onchain
-          products is a big problem to solve. Current defi UX experience falls
-          short as new users feel intimidated and stay away from using cutting
-          edge defi protocols. Clearly the next phase of products have to focus
-          on solving this. Primarily there is an absence of a social layer where
-          DeFi native users can interact with each other. In the web2 space,
-          there are lots of review and community websites around financial
-          review and discussion which have un-officially become the de-facto
-          social layer of traditional finance. Newcomers feel accepted by this
-          community and this eases the onboarding process. Another problem in
-          web3 is the fact that the majority of entrees have a disconnect
-          between the actual usecase of the dapp vs the price action. This stems
-          from the above-mentioned fact that DeFi today is incomprehensible by
-          the masses. To counter this, solutions like RabbitHole, Coinbase Earn
-          and other play-to-earn apps have come up, guiding people to try out
-          DeFi in sponsorship with the dapps. Over the past few months, the
-          industry has also seen an cambrian explosion of blockchain games, with
-          Axie infinity leading the way, now increased attention is been given
-          to games and metaverses like Decentral Games, Decentraland and
-          ComethGames, we feel games can be the gateway to the next wave of defi
-          and crypto onboarding.
+          We firmly believe DeFi is the best product that blockchains have
+          produced till date and has the power to bring high quality, censorship
+          resistant and borderless financial products to billions. Similar to
+          the concept of Vinland in Norse philosophy - a new found land by
+          Vikings that promised vast opportunities - we want to channel that
+          promise to increase discoverability of protocols via our project.
+        </p>
+        <p className={classes.para}>
+          The team behind Vinland has vast experience with scaling DeFi of
+          Polygon and API3 thru this year. They helped Polygon ecosystem to grow
+          over 100x in 6 months (number of protocol deployments and 100x in
+          DAU). The mission was to bring DeFiForAll and we created a bustling
+          ecosystem with DeFi composability. In the course of successful
+          completion of the mission, we realised new users are having a lot of
+          issues with wallets, RPCs. Also with web wallets, essentially you are
+          not increasing the pie but just recycling the present user base (~3M
+          wallets). Games have historically been the best onramp for the new
+          users in any nascent technology to get accustomed to. Implementation
+          of meta transactions for in game interactions, easy on-ramp off-ramp
+          with mobile wallets is the way ahead. All the above points sound good,
+          but the bigger problem is of cold start in the current state of
+          metaverse - getting the initial wave of users is tricky. This has not
+          been solved, although partially by governance token emissions - but
+          sticky recurring community interactions is a greenfield problem.
         </p>
       </div>
     </div>
