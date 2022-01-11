@@ -80,7 +80,7 @@ export default function SocialLinks() {
           <div className="d-flex justify-content-center mt-4">
             <div className={classes.iconWrapper}>
               <Tooltip title="Twitter" aria-label="add1">
-                <a href="https://twitter.com/project-vinland">
+                <a href="https://twitter.com/VinlandGame">
                   <IconButton aria-label="Twitter">
                     <Twitter className={classes.icon} />
                   </IconButton>
@@ -89,7 +89,7 @@ export default function SocialLinks() {
             </div>
             <div className={classes.iconWrapper}>
               <Tooltip title="Telegram">
-                <a href="https://t.me/vinland">
+                <a href="https://t.me/ProjectVinland">
                   <IconButton aria-label="Telegram">
                     <Telegram className={classes.icon} />
                   </IconButton>
@@ -109,7 +109,7 @@ export default function SocialLinks() {
 
             <div className={classes.iconWrapper}>
               <Tooltip title="Email">
-                <a href="mailto:support@vinland.io">
+                <a href="mailto:team@vinland.games">
                   <IconButton aria-label="Email">
                     <Email className={classes.icon} />
                   </IconButton>
