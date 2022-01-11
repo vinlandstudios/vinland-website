@@ -135,7 +135,12 @@ export default function Overview() {
           products is a big problem to solve. Current defi UX experience falls
           short as new users feel intimidated and stay away from using cutting
           edge defi protocols. Clearly the next phase of products have to focus
-          on solving this. Primarily there is an absence of a social layer where
+          on solving this. 
+          </p>
+
+          <p className={classes.para}>
+          {" "}
+          Primarily there is an absence of a social layer where
           DeFi native users can interact with each other. In the web2 space,
           there are lots of review and community websites around financial
           review and discussion which have un-officially become the de-facto
