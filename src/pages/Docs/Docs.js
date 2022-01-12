@@ -31,6 +31,7 @@ export default function Docs() {
         style={{
           backgroundColor: "#ffffff",
           height: "100vh",
+
           background: `linear-gradient(
             0deg,
             rgba(255, 255, 255, 0.9),
@@ -53,6 +54,7 @@ export default function Docs() {
             height: "100vh",
             overflowY: "scroll",
             backgroundColor: "#ffffff",
+            borderLeft: "1px solid #bdbdbd",
           }}
         >
           <div className="mt-5">
