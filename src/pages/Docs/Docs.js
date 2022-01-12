@@ -4,7 +4,7 @@ import { Slide } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Leftbar from "../../components/Leftbar";
 import Overview from "./Overview";
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import Roadmap from "../Home/Roadmap";
 import Defi from "./Defi";
 import Motivation from "./Motivation";
@@ -12,6 +12,7 @@ import Token from "./Token";
 import Team from "./Team";
 import NFT from "./NFT";
 import Vision from "./Vision";
+import { ArrowBack, BackspaceOutlined } from "@material-ui/icons";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -58,6 +59,10 @@ export default function Docs() {
           }}
         >
           <div className="mt-5">
+            <Link to="/" style={{ color: "#454545" }}>
+              {" "}
+              <ArrowBack /> Back To Home
+            </Link>
             {tab === 0 && <Overview />}
             {tab === 1 && <NFT />}
             {tab === 2 && <Motivation />}

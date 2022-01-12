@@ -56,7 +56,7 @@ const Leftbar = ({ tab, setTab }) => {
   return (
     <div className="d-flex flex-column px-3 mt-5">
       <div className="mx-2 mb-5 ">
-        <img src="/vinlandBlue.png" className={classes.logo}></img>
+        <img src="/vinlandblue.png" className={classes.logo}></img>
       </div>
       <div
         className={tab === 0 ? classes.active : classes.inactive}
