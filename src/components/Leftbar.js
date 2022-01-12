@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     textAlign: "left",
     marginBottom: 0,
-    marginTop: 15,
+    marginTop: 5,
     fontSize: 18,
     fontWeight: 500,
     cursor: "pointer",
@@ -27,25 +27,24 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 10,
   },
   active: {
-    color: "#1141C4",
-    backgroundColor: "white",
-    padding: "10px 5px 10px 5px",
+    color: "#f9f9f9",
+    backgroundColor: "#1141C4",
+    padding: "7px 5px 7px 5px",
     textAlign: "left",
     marginBottom: 0,
-    marginTop: 15,
+    marginTop: 10,
     fontSize: 16,
     fontWeight: 500,
     cursor: "pointer",
-    borderBottomRightRadius: 10,
-    borderTopRightRadius: 10,
+    borderRadius: 2,
   },
   inactive: {
-    color: "#f9f9f9",
+    color: "#414141",
     backgroundColor: "transparent",
     padding: "10px 5px 10px 5px",
     textAlign: "left",
     marginBottom: 0,
-    marginTop: 15,
+    marginTop: 10,
     fontSize: 16,
     fontWeight: 500,
     cursor: "pointer",
@@ -56,8 +55,8 @@ const Leftbar = ({ tab, setTab }) => {
   const classes = useStyles();
   return (
     <div className="d-flex flex-column px-3 mt-5">
-      <div className="mb-5">
-        <img src="/vinlandWhite.png" className={classes.logo}></img>
+      <div className="mx-2 mb-5 ">
+        <img src="/vinlandBlue.png" className={classes.logo}></img>
       </div>
       <div
         className={tab === 0 ? classes.active : classes.inactive}

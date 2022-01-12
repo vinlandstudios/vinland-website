@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    backgroundColor: "#191A20",
+    backgroundColor: "#ffffff",
     height: "100%",
     [theme.breakpoints.down("sm")]: {
       height: "100%",
@@ -14,18 +14,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    backgroundColor: "white",
     width: "fit-content",
-
-    padding: "10px 50px 10px 10px;",
-    borderBottomRightRadius: 10,
-    borderTopRightRadius: 10,
-    color: "white",
+    color: "#1041C4",
     textAlign: "left",
     fontSize: 36,
-    fontWeight: 600,
+    fontWeight: 500,
     verticalAlign: "middle",
-    wordSpacing: "0px",
+
     [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
@@ -33,13 +28,16 @@ const useStyles = makeStyles((theme) => ({
   para: {
     fontWeight: 400,
     verticalAlign: "baseline",
-    letterSpacing: "-0.2px",
+
     margin: 0,
     paddingTop: 10,
     paddingBottom: 10,
     textAlign: "left",
-    color: "white",
+    color: "black",
     lineHeight: 2,
+    fontWeight: 500,
+    fontSize: 17,
+
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },

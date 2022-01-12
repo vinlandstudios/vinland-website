@@ -29,12 +29,12 @@ export default function Docs() {
       <div
         className="row"
         style={{
-          backgroundColor: "#212121",
+          backgroundColor: "#ffffff",
           height: "100vh",
           background: `linear-gradient(
             0deg,
-            rgba(0, 0, 0, 0.9),
-            rgba(0, 0, 0, 0.9)
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9)
           ),
           url("./vinland_back.jpeg") no-repeat center center fixed`,
         }}
@@ -52,7 +52,7 @@ export default function Docs() {
           style={{
             height: "100vh",
             overflowY: "scroll",
-            backgroundColor: "#191A20",
+            backgroundColor: "#ffffff",
           }}
         >
           <div className="mt-5">
@@ -64,7 +64,7 @@ export default function Docs() {
             {tab === 5 && <Token />}
             {tab === 6 && (
               <div style={{ paddingTop: 30 }}>
-                <Roadmap color="white" />
+                <Roadmap color="black" />
               </div>
             )}
             {tab === 7 && <Team />}

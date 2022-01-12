@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    backgroundColor: "#191A20",
+    backgroundColor: "#ffffff",
     height: "100%",
     [theme.breakpoints.down("sm")]: {
       height: "100%",
@@ -14,18 +14,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    backgroundColor: "white",
     width: "fit-content",
-
-    padding: "10px 50px 10px 10px;",
-    borderBottomRightRadius: 10,
-    borderTopRightRadius: 10,
-    color: "white",
+    color: "#1041C4",
     textAlign: "left",
     fontSize: 36,
-    fontWeight: 600,
+    fontWeight: 700,
     verticalAlign: "middle",
-    wordSpacing: "0px",
     [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
@@ -33,13 +27,16 @@ const useStyles = makeStyles((theme) => ({
   para: {
     fontWeight: 400,
     verticalAlign: "baseline",
-    letterSpacing: "-0.2px",
+
     margin: 0,
     paddingTop: 10,
     paddingBottom: 10,
     textAlign: "left",
-    color: "white",
+    color: "black",
     lineHeight: 2,
+    fontWeight: 500,
+    fontSize: 17,
+
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -117,9 +114,7 @@ export default function Overview() {
   return (
     <div className={classes.background}>
       <div>
-        <h4 className={classes.heading}>
-          <strong className={classes.highlight}>DeFi market overview</strong>
-        </h4>
+        <h4 className={classes.heading}>DeFi market overview</h4>
       </div>
       <div>
         <p className={classes.para}>
@@ -135,26 +130,26 @@ export default function Overview() {
           products is a big problem to solve. Current defi UX experience falls
           short as new users feel intimidated and stay away from using cutting
           edge defi protocols. Clearly the next phase of products have to focus
-          on solving this. 
-          </p>
+          on solving this.
+        </p>
 
-          <p className={classes.para}>
+        <p className={classes.para}>
           {" "}
-          Primarily there is an absence of a social layer where
-          DeFi native users can interact with each other. In the web2 space,
-          there are lots of review and community websites around financial
-          review and discussion which have un-officially become the de-facto
-          social layer of traditional finance. Newcomers feel accepted by this
-          community and this eases the onboarding process. Another problem in
-          web3 is the fact that the majority of entrees have a disconnect
-          between the actual usecase of the dapp vs the price action. This stems
-          from the above-mentioned fact that DeFi today is incomprehensible by
-          the masses. To counter this, solutions like RabbitHole, Coinbase Earn
-          and other play-to-earn apps have come up, guiding people to try out
-          DeFi in sponsorship with the dapps. Over the past few months, the
-          industry has also seen an cambrian explosion of blockchain games, with
-          Axie infinity leading the way, now increased attention is been given
-          to games and metaverses like Decentral Games, Decentraland and
+          Primarily there is an absence of a social layer where DeFi native
+          users can interact with each other. In the web2 space, there are lots
+          of review and community websites around financial review and
+          discussion which have un-officially become the de-facto social layer
+          of traditional finance. Newcomers feel accepted by this community and
+          this eases the onboarding process. Another problem in web3 is the fact
+          that the majority of entrees have a disconnect between the actual
+          usecase of the dapp vs the price action. This stems from the
+          above-mentioned fact that DeFi today is incomprehensible by the
+          masses. To counter this, solutions like RabbitHole, Coinbase Earn and
+          other play-to-earn apps have come up, guiding people to try out DeFi
+          in sponsorship with the dapps. Over the past few months, the industry
+          has also seen an cambrian explosion of blockchain games, with Axie
+          infinity leading the way, now increased attention is been given to
+          games and metaverses like Decentral Games, Decentraland and
           ComethGames, we feel games can be the gateway to the next wave of defi
           and crypto onboarding.
         </p>
