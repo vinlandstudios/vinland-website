@@ -53,6 +53,7 @@ export default function Docs() {
           className="col-md-10"
           style={{
             height: "100vh",
+            paddingRight: "15%",
             overflowY: "scroll",
             backgroundColor: "#ffffff",
             borderLeft: "1px solid #bdbdbd",
