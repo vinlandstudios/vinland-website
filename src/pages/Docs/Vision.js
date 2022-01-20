@@ -117,7 +117,7 @@ export default function Vision() {
     <div className={classes.background}>
       <div>
         <h4 className={classes.heading}>
-          <strong className={classes.highlight}>Our Vinland</strong>
+          <strong className={classes.highlight}>Our Vision</strong>
         </h4>
       </div>
       <div>

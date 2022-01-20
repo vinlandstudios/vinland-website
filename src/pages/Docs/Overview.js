@@ -114,7 +114,7 @@ export default function Overview() {
   return (
     <div className={classes.background}>
       <div>
-        <h4 className={classes.heading}>DeFi market overview</h4>
+        <h4 className={classes.heading}>Overview</h4>
       </div>
       <div>
         <p className={classes.para}>
