@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+import { Button, Card } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Receipt } from "@material-ui/icons";
 import { Fade } from "react-reveal";
@@ -27,11 +27,12 @@ const useStyles = makeStyles((theme) => ({
   para: {
     fontWeight: 400,
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
+    letterSpacing: "-0.4px",
     margin: 0,
     paddingTop: 0,
     paddingBottom: 10,
     textAlign: "left",
+    fontSize: 17,
 
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
@@ -85,9 +86,98 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "7px",
     marginRight: 10,
     marginBottom: 10,
-    height: 110,
+    height: 120,
     [theme.breakpoints.down("sm")]: {
       height: "auto",
+    },
+  },
+  icon: {
+    fontSize: 16,
+    marginRight: 7,
+    color: "#ffffff",
+  },
+  featureTitle: {
+    fontWeight: 500,
+    paddingLeft: 3,
+    verticalAlign: "baseline",
+    margin: 0,
+    fontSize: 15,
+    paddingBottom: 10,
+    letterSpacing: "-0.9px",
+    color: "white",
+    textAlign: "left",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 14,
+    },
+  },
+  featurePara: {
+    paddingLeft: 8,
+    fontWeight: 400,
+    width: "90%",
+    verticalAlign: "baseline",
+    margin: 0,
+    fontSize: 16,
+    color: "white",
+    textAlign: "left",
+  },
+
+  cardTitle: {
+    fontWeight: 600,
+    verticalAlign: "baseline",
+    margin: 0,
+    fontSize: 22,
+    color: "white",
+    textAlign: "center",
+  },
+  cardValue: {
+    paddingTop: 10,
+    fontWeight: 400,
+    paddingLeft: "5%",
+    paddingRight: "5%",
+    verticalAlign: "baseline",
+
+    margin: 0,
+    fontSize: 13,
+    color: "white",
+    textAlign: "center",
+  },
+  featureCard: {
+    width: "100%",
+    height: "fit-content",
+    marginBottom: 15,
+    padding: 14,
+    borderRadius: 14,
+    backgroundColor: "#D1D3D7",
+    border: "1px solid #bdbdbd",
+    // boxShadow: "0px 50px 200px rgba(0, 0, 0, 0.5)",
+    [theme.breakpoints.down("sm")]: {
+      padding: 14,
+    },
+  },
+  description: {
+    fontWeight: 400,
+    width: "100%",
+    verticalAlign: "baseline",
+    letterSpacing: "-0.5px",
+    margin: 0,
+    fontSize: 14,
+    color: "#454545",
+    textAlign: "left",
+  },
+  featureHeading: {
+    fontWeight: 600,
+    paddingBottom: 6,
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
+    margin: 0,
+    fontSize: 20,
+    color: "#212121",
+    textAlign: "left",
+  },
+  imageContainer: {
+    width: "80%",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
     },
   },
 }));
@@ -110,38 +200,92 @@ export default function About() {
             interactive gameplay.
           </p>
 
+          <Fade>
+            <div className="row mt-4">
+              <div className="col-md-6">
+                <div
+                  className={classes.featureCard}
+                  style={{ backgroundColor: "#EFE4FC" }}
+                >
+                  <div style={{ height: 60, textAlign: "left" }}>
+                    <img
+                      src="https://cdn3d.iconscout.com/3d/premium/thumb/crypto-coins-4180930-3457456.png"
+                      height="50px"
+                    />
+                  </div>
+                  <h5 className={classes.featureHeading}>
+                    Multichain Universe
+                  </h5>
+
+                  <p className={classes.description}>
+                    Supported Ethereum, BSC, PolkaDot, Harmony, Polygon, Solana.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div
+                  className={classes.featureCard}
+                  style={{ backgroundColor: "#F7F0E7" }}
+                >
+                  <div style={{ height: 60, textAlign: "left" }}>
+                    <img
+                      src="https://cdn3d.iconscout.com/3d/premium/thumb/software-4721275-3927988.png"
+                      height="50px"
+                    />
+                  </div>
+                  <h5 className={classes.featureHeading}>
+                    Protocol Interaction
+                  </h5>
+
+                  <p className={classes.description}>
+                    Gamified way of interacting with portocols such as Uniswap,
+                    Sushiswap etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row ">
+              <div className="col-md-6">
+                <div
+                  className={classes.featureCard}
+                  style={{ backgroundColor: "#ffebee" }}
+                >
+                  <div style={{ height: 60, textAlign: "left" }}>
+                    <img
+                      src="https://cdn3d.iconscout.com/3d/premium/thumb/nft-file-4418552-3664063.png"
+                      height="50px"
+                    />
+                  </div>
+                  <h5 className={classes.featureHeading}>NFTs Marketplace</h5>
+
+                  <p className={classes.description}>
+                    Authentic and premium brand NFTs marketplace
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div
+                  className={classes.featureCard}
+                  style={{ backgroundColor: "#e0f2f1" }}
+                >
+                  <div style={{ height: 60, textAlign: "left" }}>
+                    <img
+                      src="https://cdn3d.iconscout.com/3d/premium/thumb/home-4168210-3457141.png"
+                      height="50px"
+                    />
+                  </div>
+                  <h5 className={classes.featureHeading}>
+                    Decentalised Metaverse
+                  </h5>
+
+                  <p className={classes.description}>
+                    Anyone can bring their NFTs and use into the metaverse
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Fade>
           <Fade left>
-            <div className="d-flex justify-content-center mt-3">
-              <div className={classes.focusContainer}>
-                <h6 className={classes.title}>
-                  <span style={{ fontSize: 18 }}> Multichain Universe</span>
-                </h6>
-                <p className={classes.para}>
-                  Supported Ethereum, BSC, PolkaDot, Harmony, Polygon, Solana.
-                </p>
-              </div>
-              <div className={classes.focusContainer}>
-                <h6 className={classes.title}>Protocol Interaction</h6>
-                <p className={classes.para}>
-                  Gamified way of interacting with portocols such as Uniswap,
-                  Sushiswap etc.
-                </p>
-              </div>
-            </div>
-            <div className="d-flex justify-content-center">
-              <div className={classes.focusContainer}>
-                <h6 className={classes.title}>NFTs Marketplace</h6>
-                <p className={classes.para}>
-                  Authentic and premium brand NFTs marketplace.
-                </p>
-              </div>
-              <div className={classes.focusContainer}>
-                <h6 className={classes.title}>Decentalised Metaverse</h6>
-                <p className={classes.para}>
-                  Anyone can bring their NFTs and use into the metaverse
-                </p>
-              </div>
-            </div>
             <div className="text-left mt-3">
               <Button
                 href="https://www.youtube.com/watch?v=xYnK5nbwkkM&ab_channel=AsharShahid"
@@ -155,7 +299,7 @@ export default function About() {
             </div>
           </Fade>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 d-flex align-items-center">
           <Fade right>
             <div className="text-center">
               <img

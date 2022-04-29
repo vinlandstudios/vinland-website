@@ -16,7 +16,7 @@ body {
   background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.95),
-      rgba(255, 255, 233, 0.95)
+      rgba(255, 255, 255, 0.99)
     ),
     url("vinland_back.jpeg") no-repeat center center fixed;
   /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.91), rgba(0, 0, 3, 0.6)),
@@ -87,4 +87,13 @@ a {
   width: 50px;
   background: none;
   border: 0;
+}
+
+.heading-gradient {
+  font-size: 64px;
+  background: linear-gradient(112.87deg, #1041c4 8.89%, #97c9ff 91.73%);
+  text-align: left;
+  font-weight: 800;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -1,106 +1,115 @@
+import { Hidden } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Fade } from "react-reveal";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 80,
-    backgroundColor: "#F7F8FB",
+    paddingTop: 120,
+    paddingBottom: 120,
+    paddingLeft: "12%",
+    paddingRight: "12%",
     height: "100%",
+    backgroundColor: "transparent",
     [theme.breakpoints.down("sm")]: {
-      height: "100%",
-      padding: 0,
-      paddingBottom: 50,
-      paddingTop: 50,
-    },
-  },
-  heading: {
-    color: theme.palette.pbr.textSecondary,
-    textAlign: "left",
-    fontSize: 36,
-    fontWeight: 600,
-    verticalAlign: "middle",
-    wordSpacing: "0px",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 28,
+      paddingTop: 40,
+      paddingBottom: 40,
+      textAlign: "center",
+      paddingLeft: "2%",
+      paddingRight: "2%",
     },
   },
   para: {
+    paddingTop: 20,
+    color: "black",
+    textAlign: "left",
+    fontSize: 18,
     fontWeight: 400,
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "16px",
+    },
+  },
+
+  usecaseWrapper: {
+    borderRadius: 1,
+
+    backgroundImage: 'url("images/pbr_fire.png")',
+    backgroundPosition: "center center",
+    backgroundSize: "550px",
+    backgroundRepeat: "no-repeat",
+    [theme.breakpoints.down("sm")]: {
+      backgroundSize: "90%",
+      padding: 20,
+    },
+  },
+  usecaseCard: {
+    borderRadius: 1,
+    display: "flex",
+    justifyContent: "space-between",
+    width: "100%",
+  },
+  usecaseTitle: {
+    fontWeight: 700,
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
+    letterSpacing: "-0.2px",
+    lineHeight: "32px",
     margin: 0,
-    paddingTop: 10,
-    paddingBottom: 10,
+    fontSize: 20,
+    color: "white",
     textAlign: "left",
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
+      lineHeight: "22px",
+      fontWeight: 600,
     },
   },
-
-  highlight: {
-    color: theme.palette.pbr.primary,
-  },
-  title: {
-    fontWeight: 500,
+  usecasePara: {
+    paddingTop: 10,
+    fontWeight: 400,
+    width: "85%",
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
+    letterSpacing: "-0.2px",
     margin: 0,
+    fontSize: 14,
+    lineHeight: "24px",
+    color: "white",
     textAlign: "left",
-    fontSize: 16,
-  },
-  icon: {
-    fontSize: 16,
-    marginRight: 7,
-    color: "#ffffff",
-  },
-  focusContainer: {
-    border: "1px solid #888888",
-    padding: 10,
-    borderRadius: "7px",
-    marginBottom: 10,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 13,
+      lineHeight: "18px",
+      fontWeight: 400,
+      letterSpacing: "-0.5px",
+    },
   },
   imageContainer: {
     width: "100%",
+  },
+  image: {
+    height: 80,
+
     [theme.breakpoints.down("sm")]: {
-      marginTop: 30,
-      width: "100%",
+      height: 50,
     },
   },
 
-  logoWrapper: {
-    backgroundColor: "white",
-    width: 45,
-    height: 45,
-    marginRight: 15,
-    borderRadius: 10,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    border: "1px solid #bdbdbd",
-    [theme.breakpoints.down("sm")]: {
-      width: 40,
-      height: 40,
-      marginRight: 5,
-    },
+  valueText: {
+    verticalAlign: "baseline",
+    letterSpacing: "-0.2px",
+    fontWeight: 600,
+    fontSize: 20,
+    color: "black",
+    textAlign: "left",
+    marginRight: 5,
   },
-  ethLogo: {
-    height: 25,
-    [theme.breakpoints.down("sm")]: {
-      height: 20,
-    },
-  },
-  polygonLogo: {
-    height: 25,
-    [theme.breakpoints.down("sm")]: {
-      height: 20,
-    },
-  },
-  contractAddress: {
-    fontSize: 16,
-
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 10,
-    },
+  categoryText: {
+    verticalAlign: "baseline",
+    letterSpacing: "-0.2px",
+    fontWeight: 500,
+    fontSize: 20,
+    color: "#454545",
+    textAlign: "left",
+    marginRight: 5,
   },
 }));
 export default function Tokenomics() {
@@ -108,90 +117,109 @@ export default function Tokenomics() {
 
   return (
     <div className={classes.background}>
-      <div className="container-fluid">
-        <div className="row flex-column-reverse flex-md-row">
-          <div className="col-md-6">
-            <Fade left>
-              <div className="mt-1">
-                <img
-                  src="images/token.png"
-                  alt="tokenomics"
-                  className={classes.imageContainer}
-                />
+      <div>
+        <Fade right>
+          <div className="mb-5"></div>
+          <div className="row">
+            <div className="col-md-8">
+              <h4 className="heading-gradient">$VIN TOKEN</h4>
+              <p className={classes.para}>
+                VIN token powers the Vinland platform economy. Users can use VIN
+                for governance, payments, mining, and farming.
+              </p>
+              <div className="mt-5 row d-flex justify-content-between">
+                <div className="col-md-4 d-flex justify-content-start align-items-center">
+                  <div
+                    style={{
+                      height: 10,
+                      width: 40,
+                      borderRadius: 10,
+                      background: "linear-gradient(to right,#4986C1,#2CF598)",
+                      marginRight: 10,
+                    }}
+                  ></div>
+                  <div className={classes.valueText}>5%</div>
+                  <div className={classes.categoryText}>Public Sale</div>
+                </div>
+                <div className="col-md-4 d-flex justify-content-start align-items-center">
+                  <div
+                    style={{
+                      height: 10,
+                      width: 40,
+                      borderRadius: 10,
+                      background:
+                        "linear-gradient(98.18deg, #ff6f3f 20.43%, #ffc546 74.85%)",
+                      marginRight: 10,
+                    }}
+                  ></div>
+                  <div className={classes.valueText}>10%</div>
+                  <div className={classes.categoryText}>Seed Round</div>
+                </div>
+                <div className="col-md-4 d-flex justify-content-start align-items-center">
+                  <div
+                    style={{
+                      height: 10,
+                      width: 40,
+                      borderRadius: 10,
+                      background:
+                        "linear-gradient(319.37deg, #6aa3d8 0%, #2f72af 127.88%)",
+                      marginRight: 10,
+                    }}
+                  ></div>
+                  <div className={classes.valueText}>15%</div>
+                  <div className={classes.categoryText}>Team</div>
+                </div>
               </div>
-            </Fade>
+              <div className="mt-3 row d-flex justify-content-between">
+                <div className="col-md-4 d-flex justify-content-start align-items-center">
+                  <div
+                    style={{
+                      height: 10,
+                      width: 40,
+                      borderRadius: 10,
+                      background:
+                        "linear-gradient(69.92deg, #f9447b 0.64%, #d998f4 138.38%)",
+                      marginRight: 10,
+                    }}
+                  ></div>
+                  <div className={classes.valueText}>10%</div>
+                  <div className={classes.categoryText}>Private Sale</div>
+                </div>
+                <div className="col-md-4 d-flex justify-content-start align-items-center">
+                  <div
+                    style={{
+                      height: 10,
+                      width: 40,
+                      borderRadius: 10,
+                      background:
+                        "linear-gradient(112.87deg, #4b7daf 8.89%, #97c9ff 91.73%)",
+                      marginRight: 10,
+                    }}
+                  ></div>
+                  <div className={classes.valueText}>25%</div>
+                  <div className={classes.categoryText}>Marketing</div>
+                </div>
+                <div className="col-md-4 d-flex justify-content-start align-items-center">
+                  <div
+                    style={{
+                      height: 10,
+                      width: 40,
+                      borderRadius: 10,
+                      background:
+                        "linear-gradient(98.18deg, #de735c 20.43%, #d75e43 74.85%)",
+                      marginRight: 10,
+                    }}
+                  ></div>
+                  <div className={classes.valueText}>30%</div>
+                  <div className={classes.categoryText}>Ecosystem</div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 d-flex align-items-center justify-content-center">
+              <img src="images/vin.png" alt="chart" height="200px" />
+            </div>
           </div>
-          <div className="col-md-6">
-            <Fade right>
-              <div className="mb-5">
-                <h4 className={classes.heading}>
-                  <strong className={classes.highlight}>Tokenomics</strong> &
-                  Locking
-                </h4>
-              </div>
-              <div className={classes.focusContainer}>
-                <h6 className={classes.title}>Smart Contract</h6>
-
-                <div className="mt-2">
-                  <a href="https://etherscan.io/token/0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
-                    <div className="d-flex justify-content-start align-items-center">
-                      <div className={classes.logoWrapper}>
-                        {" "}
-                        <img
-                          src="images/ethlogo.png"
-                          className={classes.ethLogo}
-                        />{" "}
-                      </div>
-                      <span className={classes.contractAddress}>
-                        0x298d492e8c1d909d3f63bc4a36c66c64acb3d695
-                      </span>
-                    </div>
-                  </a>
-                </div>
-
-                <div className="mt-2">
-                  <a href="https://polygonscan.com/token/0x0d6ae2a429df13e44a07cd2969e085e4833f64a0">
-                    <div className="d-flex justify-content-start align-items-center">
-                      <div className={classes.logoWrapper}>
-                        {" "}
-                        <img
-                          src="images/polygon.png"
-                          className={classes.polygonLogo}
-                        />{" "}
-                      </div>
-                      <div className={classes.contractAddress}>
-                        {" "}
-                        0x0d6ae2a429df13e44a07cd2969e085e4833f64a0
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              {/* <div className={classes.focusContainer}>
-              <h6 className={classes.title}>NFT Standard</h6>
-
-              <p className={classes.para}>The ultimate cross-chain NFT standard based on Substrate coming soon.</p>
-            </div> */}
-              <div className={classes.focusContainer}>
-                <h6 className={classes.title}>Unlock Schedule</h6>
-
-                <div className={classes.para}>
-                  <ul>
-                    <li>
-                      <strong>Ecosystem :</strong> 1,000,000 PBR every month.
-                    </li>
-                    <li>
-                      <strong>Marketing :</strong> 1,000,000 PBR every month
-                    </li>
-                    <li>
-                      <strong>Team :</strong> 5,000,000 PBR every 6 months
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </Fade>
-          </div>
-        </div>
+        </Fade>
       </div>
     </div>
   );

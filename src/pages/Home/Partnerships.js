@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageWrapperNew: {
     padding: 10,
-    height: "50px",
+    height: "45px",
     [theme.breakpoints.down("sm")]: {
       height: "4px",
       padding: 10,
@@ -83,17 +83,17 @@ export default function Partnerships() {
       </h6>
 
       <div className={classes.listingsWrapper2}>
-        <div className="mt-1 row  text-center">
-          <div className="col-6 col-md-2">
+        <div className="mt-1 row d-flex align-items-center text-center">
+          <div className="col-6 col-md-3">
             <a href="https://aave.com/">
               <img
-                src="images/aave.png"
+                src="https://www.cryptocoinzone.com/wp-content/uploads/2021/11/Aave-logo.png"
                 alt="aave"
                 className={classes.imageWrapper}
               />
             </a>
           </div>
-          <div className="col-6 col-md-5">
+          <div className="col-6 col-md-4">
             <a href="https://polygon.technology/">
               <img
                 src="images/polygon.svg"

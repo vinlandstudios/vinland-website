@@ -14,6 +14,7 @@ import Team from "./Team";
 import Collaborate from "./Collaborate";
 import ForProjects from "./ForProjects";
 import MainAppbar from "../../common/Appbar";
+import Tokenomics from "./Tokenomics";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -34,12 +35,17 @@ export default function Home() {
       <section id="how-it-works">
         <About />
       </section>
+
       <section id="for-projects">
         <ForProjects />
       </section>
       <section id="colaborare">
+        <Tokenomics />
+      </section>
+      <section id="colaborare">
         <Collaborate />
       </section>
+
       <section id="roadmap">
         <Roadmap />
       </section>

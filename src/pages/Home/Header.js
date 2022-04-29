@@ -11,7 +11,7 @@ import Pulse from "react-reveal/Pulse";
 
 const useStyles = makeStyles((theme) => ({
   spacing: {
-    paddingTop: 130,
+    paddingTop: "5%",
     paddingLeft: "7%",
     paddingRight: "7%",
     [theme.breakpoints.down("sm")]: {
@@ -121,7 +121,7 @@ export default function Header() {
                 <Pulse>
                   <h1 className={classes.heading}>
                     Experience evolving
-                    <span className={classes.highlight}> Defi </span> in
+                    <span className={classes.highlight}> DeFi </span> in
                     Metaverse.
                   </h1>
                   <p className={classes.para}>
@@ -160,14 +160,12 @@ export default function Header() {
                   </div>
                 </Pulse>
               </div>
-              <div className="col-md-6">
-                <div>
-                  <img
-                    src="https://thenemesis.io/img/metaverse/metaverse-village.png"
-                    alt="image"
-                    width="100%"
-                  />
-                </div>
+              <div className="col-md-6 d-flex justify-content-center align-items-end">
+                <img
+                  src="https://cdn3d.iconscout.com/3d/premium/thumb/customer-survey-4668943-3890258.png"
+                  alt="image"
+                  width="90%"
+                />
               </div>
             </div>
           </div>
